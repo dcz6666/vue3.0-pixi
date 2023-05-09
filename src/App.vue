@@ -1,5 +1,6 @@
 <script setup>
 import zuoyizuo from "./components/zuoyizuo/index";
+import parallax from "./components/parallax/index.vue"
 import { ref, customRef } from "vue";
 function adapter() {
   const clientW = document.documentElement.clientWidth; // 布局视口
@@ -9,7 +10,8 @@ adapter();
 </script>
 <template>
   <div class="root">
-    <zuoyizuo></zuoyizuo>
+    <zuoyizuo v-if="false"></zuoyizuo>
+    <parallax></parallax>
   </div>
 </template>
 <style scoped lang="scss">
