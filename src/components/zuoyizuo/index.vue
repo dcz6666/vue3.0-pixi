@@ -623,7 +623,7 @@ const addSpr = (figureId, picname) => {
     imgContainer.addChild(fehair);
   } else {
     //其他
-    container.name='sprite'+picname
+    container.name = "sprite" + picname;
 
     let imgsize = sizeJson[picname];
     console.log("imgsize", imgsize);
@@ -730,7 +730,7 @@ const addSpr = (figureId, picname) => {
     if (flag) {
       resizeStartPosX = e.data.global.x;
       resizeSprName = this.parent.name;
-      console.log("resizeSprName===2",resizeSprName)
+      console.log("resizeSprName===2", resizeSprName);
       app.stage.getChildByName("bg").interactive = true;
       app.stage
         .getChildByName("bg")
@@ -744,7 +744,7 @@ const addSpr = (figureId, picname) => {
       let tempPosX = e.data.global.x;
       let dur = tempPosX - resizeStartPosX;
       resizeStartPosX = tempPosX;
-      console.log("==resizeSprName==1",resizeSprName);
+      console.log("==resizeSprName==1", resizeSprName);
 
       if (dur > 0) {
         //放大
